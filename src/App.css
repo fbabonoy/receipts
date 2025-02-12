@@ -1,0 +1,17 @@
+.view {
+  display: flex;
+}
+
+.Card {
+  border: 1px solid red;
+  margin: 20px;
+  padding: 20px;
+}
+
+.Card > div {
+  display: flex;
+}
+
+.SectionKey {
+  color: plum;
+}
