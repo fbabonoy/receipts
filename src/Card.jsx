@@ -1,7 +1,7 @@
 import Section from "./Section"
 
-function Card({name, order,setToPaid}) {
-
+function Card({name, order, setToPaid, deleteBye}) {
+    
     let orderArr = []
     for (let orderItem in order) {
         orderArr.push(
@@ -9,9 +9,12 @@ function Card({name, order,setToPaid}) {
         )
     } 
 
-    return <div className="Card" onClick={setToPaid}>
+    return <div className="Card" >
         <h2>{name}</h2>
         {orderArr}
+        <button onClick={setToPaid}>pay</button>
+        <button onClick={deleteBye}>Delete</button>
+
     </div>
 }
 
